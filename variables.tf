@@ -17,6 +17,6 @@ variable "vercel_projects" {
     }))
     custom_domain = optional(bool, false)
   }))
-  description = "Mapa de proyectos Vercel con framework, tipo de git y variables de entorno."
+  description = "Vercel projects configuration."
   default     = {}
 }
