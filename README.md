@@ -26,12 +26,8 @@ No modules.
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| <a name="input_aws_profile"></a> [aws\_profile](#input\_aws\_profile) | AWS profile to use. | `string` | n/a | yes |
 | <a name="input_github_username"></a> [github\_username](#input\_github\_username) | GitHub username for the repository. | `string` | n/a | yes |
-| <a name="input_s3_key"></a> [s3\_key](#input\_s3\_key) | S3 key for Terraform state. | `string` | n/a | yes |
-| <a name="input_s3_name"></a> [s3\_name](#input\_s3\_name) | S3 bucket name for Terraform state. | `string` | n/a | yes |
-| <a name="input_s3_region"></a> [s3\_region](#input\_s3\_region) | AWS region for S3 bucket. | `string` | n/a | yes |
-| <a name="input_vercel_projects"></a> [vercel\_projects](#input\_vercel\_projects) | Mapa de proyectos Vercel con framework, tipo de git y variables de entorno. | <pre>map(object({<br/>    framework     = optional(string, null)<br/>    git_type      = string<br/>    build_command = optional(string, null)<br/>    node_version  = optional(string, "22.x")<br/>    environment_variables = list(object({<br/>      key     = string<br/>      value   = string<br/>      target  = set(string)<br/>      comment = optional(string)<br/>    }))<br/>    custom_domain = optional(bool, false)<br/>  }))</pre> | `{}` | no |
+| <a name="input_vercel_projects"></a> [vercel\_projects](#input\_vercel\_projects) | Vercel projects configuration. | <pre>map(object({<br/>    framework     = optional(string, null)<br/>    git_type      = string<br/>    build_command = optional(string, null)<br/>    node_version  = optional(string, "22.x")<br/>    environment_variables = list(object({<br/>      key     = string<br/>      value   = string<br/>      target  = set(string)<br/>      comment = optional(string)<br/>    }))<br/>    custom_domain = optional(bool, false)<br/>  }))</pre> | `{}` | no |
 
 ## Outputs
 
