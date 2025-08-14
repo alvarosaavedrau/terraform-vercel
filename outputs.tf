@@ -10,5 +10,5 @@ output "vercel_projects_id" {
 
 output "vercel_project_repos" {
   value       = { for name, project in var.vercel_projects : name => "${var.github_username}/${name}" }
-  description = "Lista de repos de todos los proyectos en formato usuario/repositorio"
+  description = "GitHub repository names for the Vercel projects"
 }

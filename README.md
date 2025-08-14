@@ -33,6 +33,6 @@ No modules.
 
 | Name | Description |
 |------|-------------|
-| <a name="output_vercel_project_repos"></a> [vercel\_project\_repos](#output\_vercel\_project\_repos) | Lista de repos de todos los proyectos en formato usuario/repositorio |
+| <a name="output_vercel_project_repos"></a> [vercel\_project\_repos](#output\_vercel\_project\_repos) | GitHub repository names for the Vercel projects |
 | <a name="output_vercel_projects_id"></a> [vercel\_projects\_id](#output\_vercel\_projects\_id) | id for the created Vercel projects |
 | <a name="output_vercel_projects_name"></a> [vercel\_projects\_name](#output\_vercel\_projects\_name) | Name for the created Vercel projects |
